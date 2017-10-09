@@ -15,32 +15,32 @@ probes = [
 
 planet_list = Array.new
 planet_list = ["Mercury", "Mars"]
-# puts "Initial planet_list: #{planet_list}"
+puts "Initial planet_list: #{planet_list}"
 puts spacer
 
 planet_list.push("Jupiter", "Saturn")
-# puts "Second planet_list: #{planet_list}"
+puts "Second planet_list: #{planet_list}"
 puts spacer
 
 last2_planets = ["Uranus", "Neptune"]
 planet_list.concat(last2_planets)
-# puts "Third planet_list: #{planet_list}"
+puts "Third planet_list: #{planet_list}"
 puts spacer
 
 planet_list.insert(1,"Venus", "Earth")
-# puts "Fourth planet_list: #{planet_list}"
+puts "Fourth planet_list: #{planet_list}"
 puts spacer
 
 planet_list.push("Pluto")
-# puts "Fifth planet_list: #{planet_list}"
+puts "Fifth planet_list: #{planet_list}"
 puts spacer
 
 rocky_planets = planet_list.slice(0..3)
-# puts "Rocky planet list: #{rocky_planets}"
+puts "Rocky planet list: #{rocky_planets}"
 puts spacer
 
 planet_list.pop
-# puts "Sixth planet_list: #{planet_list}"
+puts "Sixth planet_list: #{planet_list}"
 puts spacer
 
 # puts probes
@@ -57,6 +57,7 @@ planet_list.each do |planet|
     probes.each do |proby|
         if proby.include? (planet)
             puts "#{proby[1]}"
+            puts "***"
         end
     end
 end
